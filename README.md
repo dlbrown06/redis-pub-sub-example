@@ -3,7 +3,7 @@ Simple example of using a redis pub/sub server
 
 
 ## Steps to Get Started
-1. Create a `config.js` file to house your redis configuration
+1. Create a `config.js` file to house your redis configuration. I'm using a free test redis server from [Redis Labs](http://redislabs.com)
 ```
 module.exports = {
   "host": '{HOST OF REDIS SERVER}',
@@ -17,5 +17,5 @@ node publish.js
 ```
 3. Start the subscription script from `boot.js` to start 8 sub processes
 ```
-node subscribe.js
+node boot.js
 ```
